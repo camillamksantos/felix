@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Félix</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        header {
+            background-color: aquamarine;
+
+            text-align: center;
+
+            padding: 10px;
+        }
+
+        nav{
+            margin-top: 10px;
+        }
+
+        main {
+            background-color: darkred;
+
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        #texto1 {
+            color: yellowgreen;
+        }
+
+        #texto2 {
+            color: darkviolet;
+        }
+
+        img {
+            border-radius: 12px;
+        }
+
+        #personagem {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #personagem a {
+            color: orange;
+        }
+
+        button {
+            background-color: chocolate;
+            height: 50px;
+            width: 125px;
+
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: forestgreen;
+        }
+        
+        input {
+            font-size: 18px;
+            border-radius: 8px;
+
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        #cadastro {
+            width: 301px;
+        }
+
+        #cadastro input{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            width: 300px;
+            height: 30px;
+
+            font-size: 1em;
+        }
+
+        #botao {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <header>
+            <img src="img/gato.png" alt="Félix" style="width: 300px;">
+            <nav>
+                <a href="#">Home</a>
+                <a href="public/sobre.html">Sobre</a>
+                <a href="public/contato.html">Contato</a>
+                <a href="#personagem">Personagem</a>
+            </nav>
+        </header>
+        <main>
+           <article>
+               <h1>O gato Félix</h1>
+                <p id="texto1"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Alias aut impedit delectus perferendis dolores qui expedita amet, porro fuga quibusdam. Velit facere reprehenderit obcaecati ducimus, laborum maxime expedita reiciendis repellat!</p>
+                <br>
+                <br>
+                <p id="texto2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quae dolor consequatur fugiat non reprehenderit facere excepturi veritatis neque eum obcaecati eligendi ullam vel, molestias saepe, in voluptatum quibusdam unde!</p><br>
+           </article>
+           <aside>
+                <img src="img/bolsa.png" alt="">
+           </aside>
+           <aside>
+                <div id="personagem">
+                    <h3>Categorias</h3>
+                    <a href="#">Bolsa do Felix</a>
+                    <a href="#">Mãe do Felix</a>
+                    <a href="#">Irmão do Felix</a>
+                    <a href="#">Namorada do Felix</a>
+                </div>
+           </aside>
+
+           <aside>
+                <div>
+                    <h2>Categorias</h2><br>
+                    <div id="cadastro">
+                        <form action="">
+                            <input type="text" id="nome" placeholder="Coloque seu nome"><br>
+                            <input type="text" id="email" placeholder="Preencha com e-mail"><br>
+                            <input type="text" id="idade" placeholder="Coloque sua idade"><br>
+                            <div id="botao">
+                                <button type="button">Cadastrar</button>
+                                <button type="button">Apagar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+           </aside>
+        </main>
+        
+        <footer>
+            <h5>Todos os direitos reservados.</h5>
+        </footer>
+    </div>
+
+
+</body>
+</html>
