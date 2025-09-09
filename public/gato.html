@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato</title>
+
+    <style>
+        @charset "UTF-8";
+
+        @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+
+        body {
+            background-color: rgb(241, 213, 160);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+
+            background-color: burlywood;
+
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 60px;
+            margin-bottom: 200px;
+
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 8px;
+
+            padding-top: 50px;
+            padding-left: 250px;
+            padding-right: 300px;
+            padding-bottom: 50px;
+        }
+
+        img {
+            height: 350px;
+
+            border-radius: 20px;
+
+            box-shadow: 3px 3px 5px black;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+
+            text-shadow: 2px 2px 1px rgb(71, 31, 31);
+            font-family: "Chicle", serif;
+            font-size: 40px;
+
+        }
+
+        input {
+            display: flex;
+            gap: 5px;
+
+            font-size: 18px;
+
+            text-align: center;
+
+            width: 300px;
+            height: 40px;
+
+            border-radius: 8px;
+        }
+
+        #botao {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            width: 125px;
+            height: 50px;
+
+            font-size: 18px;
+            color: white;
+            background-color: brown;
+            box-shadow: 2px 2px 5px rgb(55, 14, 14);
+
+            border-radius: 12px;
+        }
+
+        button:hover {
+            background-color: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../img/bolsa.png" alt="gato">
+            <form action="">
+                <h1>FAÇA SEU CADASTRO!</h1>
+                <input type="text" id="nome" placeholder="Coloque seu nome">
+                <br>
+                <input type="text" id="email" placeholder="Preencha com seu e-mail">
+                <br>
+                <input type="text" id="idade" placeholder="Coloque sua idade">
+                <br>
+                <div id="botao">
+                    <button type="button">Cadastrar</button>
+                    <button type="button">Apagar</button>
+                </div>
+            </form>
+
+    </div>
+</body>
+</html>
